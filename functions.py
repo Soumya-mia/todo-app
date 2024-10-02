@@ -3,7 +3,7 @@ def get_todos():
         todos_local = file.readlines()
     return todos_local
 
-def write_todos():
+def write_todos(todos):
     with open('todos.txt', 'w') as file:
-        todos_local = file.writelines()
-    return todos_local
+        todos1 = file.writelines(todos)
+    return todos1
